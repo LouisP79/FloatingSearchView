@@ -1,6 +1,8 @@
 Floating Search View [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Floating%20Search%20View-green.svg?style=true)](https://android-arsenal.com/details/1/2842)
 =============
 
+[![](https://jitpack.io/v/LouisP79/FloatingSearchView.svg)](https://jitpack.io/#LouisP79/FloatingSearchView)
+
 An implementation of a floating search box with search suggestions, also called persistent search bar.
 
 ![Alt text](/images/150696.gif)
@@ -21,9 +23,18 @@ that might help you make changes to your own copy of the code base.
 Usage
 -----
 
-1. In your dependencies, add
+1. Add it in your root build.gradle (Project) at the end of repositories:
     ```
-         compile 'com.github.arimorty:floatingsearchview:2.1.1'
+         	allprojects {
+         		repositories {
+         			...
+         			maven { url 'https://jitpack.io' }
+         		}
+         	}
+    ```
+1. In your dependencies build.gradle (app), add
+    ```
+         implementation 'com.github.LouisP79:FloatingSearchView:Tag'
     ```
 2. Add a FloatingSearchView to your view hierarchy, and make sure that it takes
    up the full width and height of the screen
